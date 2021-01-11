@@ -5,7 +5,7 @@ var request = require('sync-request')
 
 var movieModel = require('../models/movies')
 
-var myApiKey = "8087f408100c3de021fda9e650563612"
+var myApiKey = "API KEY THE MOVIE DB"
 
 router.get('/new-movies', function(req, res, next) {
   var data = request('GET',`https://api.themoviedb.org/3/discover/movie?api_key=${myApiKey}&language=fr-FR&region=FR&sort_by=release_date.desc&include_adult=false&include_video=false&page=1&release_date.lte=2020-01-01`)
